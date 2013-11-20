@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StoreActivity" >
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/save_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/remark_text"
+        android:onClick="cancelStore"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancel_btn"
+        android:layout_alignParentLeft="true"
+        android:onClick="saveStore"
+        android:text="@string/save" />
+
+    <EditText
+        android:id="@+id/remark_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save_btn"
+        android:layout_alignLeft="@+id/date_text"
+        android:ems="10"
+        android:hint="@string/remark"
+        android:inputType="textImeMultiLine"
+        android:singleLine="false" />
+
+    <EditText
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/remark_text"
+        android:layout_alignLeft="@+id/amount_text"
+        android:layout_alignRight="@+id/amount_text"
+        android:ems="10"
+        android:hint="@string/date"
+        android:onClick="openDate"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/amount_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/date_text"
+        android:layout_alignLeft="@+id/location_text"
+        android:ems="10"
+        android:hint="@string/amount"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/amount_text"
+        android:layout_alignLeft="@+id/save_btn"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="@string/location"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/desc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/location_text"
+        android:layout_alignLeft="@+id/location_text"
+        android:layout_alignRight="@+id/location_text"
+        android:ems="10"
+        android:hint="@string/description"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/desc_text"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/receipt_desc"
+        android:src="@drawable/receipt" />
+
+</RelativeLayout>

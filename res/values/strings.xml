@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Receipt Box System</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="store">Store</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="view">View</string>
+    <string name="title_activity_store">StoreActivity</string>
+    <string name="location">Location</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="remark">Remark</string>
+    <string name="receipt_desc">Receipt</string>
+    <string name="capture">Capture</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="description">Description</string>
+    <string name="title_activity_view">ViewActivity</string>
+    <string name="title_activity_receipt">ReceiptActivity</string>
+    <string name="title_activity_edit_receipt">EditReceiptActivity</string>
+
+</resources>

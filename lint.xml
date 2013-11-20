@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/com/receiptboxsystem/DatePickerFragment.java" />
+        <ignore path="src/com/receiptboxsystem/ReceiptActivity.java" />
+        <ignore path="src/com/receiptboxsystem/StoreActivity.java" />
+    </issue>
+    <issue id="ViewConstructor">
+        <ignore path="src/com/receiptboxsystem/CameraPreview.java" />
+    </issue>
+</lint>

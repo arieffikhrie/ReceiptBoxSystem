@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.receiptboxsystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.receiptboxsystem.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.receiptboxsystem.StoreActivity"
+            android:label="@string/title_activity_store"
+            android:parentActivityName="com.receiptboxsystem.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.receiptboxsystem.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.receiptboxsystem.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:parentActivityName="com.receiptboxsystem.StoreActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.receiptboxsystem.StoreActivity" />
+        </activity>
+        <activity
+            android:name="com.receiptboxsystem.ViewActivity"
+            android:label="@string/title_activity_view"
+            android:parentActivityName="com.receiptboxsystem.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.receiptboxsystem.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.receiptboxsystem.ReceiptActivity"
+            android:label="@string/title_activity_receipt"
+            android:parentActivityName="com.receiptboxsystem.ViewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.receiptboxsystem.ViewActivity" />
+        </activity>
+        <activity
+            android:name="com.receiptboxsystem.EditReceiptActivity"
+            android:label="@string/title_activity_edit_receipt"
+            android:parentActivityName="com.receiptboxsystem.ReceiptActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.receiptboxsystem.ReceiptActivity" />
+        </activity>
+    </application>
+
+</manifest>
